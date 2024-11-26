@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tetrika-interview"
+version = "0.1.0"
+description = "test tasks for tetrika"
+authors = ["Lerokkkk <vailyinykh@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+aiohttp = "^3.11.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
