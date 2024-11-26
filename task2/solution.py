@@ -19,9 +19,6 @@ def get_continue_page(data: dict[str: dict | str | int]):
 
 
 def get_animals_title_from_query(query: dict):
-    # for category_member in query.get('categorymembers'):
-    #     title = category_member.get('title')
-    #     yield title
     return [category_member.get('title') for category_member in query.get('categorymembers')]
 
 
@@ -51,7 +48,7 @@ def fetch_all_animals():
 def app():
     for title in fetch_all_animals():
         pass
-    
+
 
 start = datetime.datetime.now()
 with open('test.json', 'w', encoding='utf-8') as file:
