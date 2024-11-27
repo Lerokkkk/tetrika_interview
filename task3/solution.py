@@ -1,4 +1,4 @@
-def make_presence_intervals(intervals: list[int]):
+def make_presence_intervals(intervals: list[int]) -> set[range]:
     presence_intervals = set()
     for i in range(0, len(intervals) - 1, 2):
         presence_intervals.update(range(intervals[i], intervals[i + 1]))
