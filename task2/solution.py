@@ -1,11 +1,8 @@
 import csv
-from collections import Counter
-
 import aiohttp
 import aiofiles
 import asyncio
 import json
-import datetime
 
 
 async def fetch_page(session, url, params):
